@@ -1,0 +1,26 @@
+.main {
+  width: 100%;
+  padding: 0 10%;
+}
+.main .main-inner {
+  width: 100%;
+}
+.main .main-inner ul {
+  display: grid;
+  grid-row-gap: 30px;
+  padding: 30px 0;
+  grid-template-columns: 150px 150px 150px 150px 150px 150px 150px  ;
+  justify-content: space-between;
+}
+.main .main-inner ul li {
+  list-style-type: none;
+  background-color: white;
+}
+.main .main-inner ul li img {
+  display: block;
+  width: 150px;
+  height: 150px;
+}
+.main .main-inner ul li:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,88 @@
+@general_font_tw:'Noto Sans TC', sans-serif;
+@theme_color:#ffa31a;
+
+
+.footer{
+    width:100%;
+    
+    .footer-upper-bar{
+        padding:30px 10% 40px 10%;
+        background-color:rgba(255,255,255,0.25);
+        ul{
+            li{
+                a{
+                    text-decoration: none;
+                    color:inherit;
+                }
+            }
+        }
+        .footer-content-ul{
+            width:25%;
+            display:inline-block;
+            vertical-align: top;
+            .footer-content-list{
+                font-family: @general_font_tw;
+                font-size:18px;
+                line-height:40px;
+                color:@theme_color;
+                list-style-type:none;
+                
+            }
+            .title{
+                
+                line-height:46px;
+                font-weight: 900;
+                font-size:20px;
+                color:#bbb;
+            }
+            .github , .terms-policy , .dev-apis{
+                &:hover{
+                    text-decoration:underline;
+                }
+            }
+        }
+    }
+
+    .footer-lower-logo-bar{
+        width:100%;
+        ul{
+            padding: 0 10%;
+            li{
+                display:inline-block;
+            }
+            .title-logo{
+                display:inline-block;
+                border-radius:5px;
+                font-family: @general_font_tw;
+                list-style-type:none;
+                .title-logo-anchor{
+                    text-decoration: none;
+                    font-family: inherit;
+                    color:rgb(192, 192, 192);
+                    font-size:20px;
+                    font-weight: 900;
+                    .title-logo-span{
+                        font-family: inherit;
+                        color:black;
+                        background-color:rgb(150,150,150);
+                        padding:0 1px;
+                        margin-left:2px;
+                        border-radius:4px;
+                    }
+                }
+            }
+            .footer-logo{
+                vertical-align: middle;
+                float:right;
+                a{
+                    .footer-logo-img{
+                        display:block;
+                        width:55px;
+                        height:55px;
+                    }
+                }
+            }
+        }
+
+    }
+}

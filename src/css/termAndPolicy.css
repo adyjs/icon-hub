@@ -1,0 +1,29 @@
+.terms-policy {
+  width: 100%;
+  padding: 0 10%;
+}
+.terms-policy h3 {
+  letter-spacing: 2px;
+  margin: 10px 0 40px 0;
+  color: #ffa31a;
+}
+.terms-policy p {
+  letter-spacing: 1px;
+  line-height: 30px;
+  color: white;
+}
+.terms-policy .terms-policy-edit-date {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+}
+.terms-policy .terms-policy-title {
+  text-align: center;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 900;
+}
+.terms-policy .terms-policy-claim-statement {
+  padding: 20px 0 100px 0;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 100;
+}

@@ -1,0 +1,51 @@
+@general_font_tw:'Noto Sans TC', sans-serif;
+@status_bar_font_en: 'Ubuntu', sans-serif;
+@theme_color:#ffa31a;
+
+
+
+
+
+.status-bar{
+    width:100%;
+    padding:0 10%;
+    margin-top:10px;
+    .status-content{
+        text-transform: capitalize;
+        font-weight:900;
+        line-height:36px;
+        margin:10px 0;
+        display:inline-block;
+        font-family: @status_bar_font_en;
+        font-size:20px;
+        color:white;
+    }
+    .item-background-option{
+        float:right;
+        margin-top:8px;
+        .background-option{
+            cursor:pointer;
+            border-radius:5px;
+            border:grey solid 2px;
+            float:left;
+            margin:0 6px;
+            width:36px;
+            height:36px;
+            &:hover{
+                border:@theme_color solid 2px;
+            }
+        }
+        #bg-option-transparent{
+            background-image:url('../imgs/transparent_back.png');
+            background-size:160px;
+            background-repeat:no-repeat;
+        };
+        #bg-option-white{
+            background-color:white;
+        };
+        #bg-option-black{
+            background-color:black;
+        };
+    }
+    
+}

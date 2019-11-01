@@ -1,0 +1,49 @@
+@general_font_tw:'Noto Sans TC', sans-serif;
+@status_bar_font_en: 'Ubuntu', sans-serif;
+@theme_color:#ffa31a;
+
+.search-main{
+    width:100%;
+    padding:0 10%;
+    .search-main-inner{
+        width:100%;;
+        .search-items-ul{
+            display:grid;
+            padding:30px 0 100px 0;
+            grid-row-gap: 30px;
+            grid-template-columns: 150px 150px 150px 150px 150px 150px 150px  ;
+            justify-content: space-between;
+            .search-items-li{
+                list-style-type:none;
+                padding:10px;
+                img{
+                    display:block;
+                    width: 130px;
+                    height:130px;
+                }
+                &:hover{
+                    cursor:pointer;
+                }
+            }
+            .search-items-bg-white{
+                background-color:white;
+            }
+            .search-items-bg-black{
+                background-color:black;
+            }
+            .search-items-bg-transparent{
+                background-image:url('../imgs/transparent_back.png');
+                background-repeat: no-repeat;
+                background-size:130%;
+            }
+        }
+        .empty-icon-sets{
+            border-left:@theme_color solid 5px;
+            width:100%;
+            color:white;
+            font-size:24px;
+            margin:40px 0 300px 0px;
+            padding:0 0 0 14px;
+        }
+    }
+}

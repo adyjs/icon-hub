@@ -1,0 +1,73 @@
+.footer {
+  width: 100%;
+}
+.footer .footer-upper-bar {
+  padding: 30px 10% 40px 10%;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.footer .footer-upper-bar ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+.footer .footer-upper-bar .footer-content-ul {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+}
+.footer .footer-upper-bar .footer-content-ul .footer-content-list {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  color: #ffa31a;
+  list-style-type: none;
+}
+.footer .footer-upper-bar .footer-content-ul .title {
+  line-height: 46px;
+  font-weight: 900;
+  font-size: 20px;
+  color: #bbb;
+}
+.footer .footer-upper-bar .footer-content-ul .github:hover,
+.footer .footer-upper-bar .footer-content-ul .terms-policy:hover,
+.footer .footer-upper-bar .footer-content-ul .dev-apis:hover {
+  text-decoration: underline;
+}
+.footer .footer-lower-logo-bar {
+  width: 100%;
+}
+.footer .footer-lower-logo-bar ul {
+  padding: 0 10%;
+}
+.footer .footer-lower-logo-bar ul li {
+  display: inline-block;
+}
+.footer .footer-lower-logo-bar ul .title-logo {
+  display: inline-block;
+  border-radius: 5px;
+  font-family: 'Noto Sans TC', sans-serif;
+  list-style-type: none;
+}
+.footer .footer-lower-logo-bar ul .title-logo .title-logo-anchor {
+  text-decoration: none;
+  font-family: inherit;
+  color: #c0c0c0;
+  font-size: 20px;
+  font-weight: 900;
+}
+.footer .footer-lower-logo-bar ul .title-logo .title-logo-anchor .title-logo-span {
+  font-family: inherit;
+  color: black;
+  background-color: #969696;
+  padding: 0 1px;
+  margin-left: 2px;
+  border-radius: 4px;
+}
+.footer .footer-lower-logo-bar ul .footer-logo {
+  vertical-align: middle;
+  float: right;
+}
+.footer .footer-lower-logo-bar ul .footer-logo a .footer-logo-img {
+  display: block;
+  width: 55px;
+  height: 55px;
+}

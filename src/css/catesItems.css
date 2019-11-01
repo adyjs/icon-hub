@@ -1,0 +1,15 @@
+.drawer-inner-item {
+  list-style-type: none;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+.drawer-inner-item .drawer-anchor {
+  text-decoration: none;
+  font-family: 'Noto Sans TC', sans-serif;
+  color: #ccc;
+}
+.drawer-inner-item .drawer-anchor:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.25);
+}

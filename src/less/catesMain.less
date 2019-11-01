@@ -1,0 +1,49 @@
+@general_font_tw:'Noto Sans TC', sans-serif;
+@theme_color:#ffa31a;
+@back_theme_color:rgba(255,255,255,0.25);
+
+.cates-main{
+    width:100%;
+    padding:0 10%;
+    .cates-main-inner{
+        width:100%;;
+        .cates-items-ul{
+            display:grid;
+            grid-row-gap: 30px;
+            padding:30px 0 100px 0;
+            grid-template-columns: 150px 150px 150px 150px 150px 150px 150px  ;
+            justify-content: space-between;
+            .cates-items-li{
+                list-style-type:none;
+                padding:10px;
+                img{
+                    display:block;
+                    width: 130px;
+                    height:130px;
+                }
+                &:hover{
+                    cursor:pointer;
+                }
+            };
+            .cates-items-bg-white{
+                background-color:white;
+            }
+            .cates-items-bg-black{
+                background-color:black;
+            }
+            .cates-items-bg-transparent{
+                background-image:url('../imgs/transparent_back.png');
+                background-repeat: no-repeat;
+                background-size:130%;
+            }
+        }
+        .empty-icon-sets{
+            border-left:@theme_color solid 5px;
+            width:100%;
+            color:white;
+            font-size:24px;
+            margin:40px 0 300px 0px;
+            padding:0 0 0 14px;
+        }
+    }
+}

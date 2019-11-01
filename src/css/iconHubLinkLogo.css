@@ -1,0 +1,16 @@
+.title-logo .title-logo-anchor {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+  line-height: 60px;
+  font-size: 40px;
+  font-weight: 900;
+}
+.title-logo .title-logo-anchor .title-logo-span {
+  font-family: inherit;
+  color: black;
+  background-color: #ffa31a;
+  padding: 0 2px;
+  margin-left: 4px;
+  border-radius: 6px;
+}

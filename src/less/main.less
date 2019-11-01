@@ -1,0 +1,31 @@
+@general_font_tw:'Noto Sans TC', sans-serif;
+@theme_color:#ffa31a;
+@back_theme_color:rgba(255,255,255,0.25);
+
+.main{
+    width:100%;
+    padding:0 10%;
+    .main-inner{
+        width:100%;;
+        ul{
+            display:grid;
+            grid-row-gap: 30px;
+            padding:30px 0;
+            grid-template-columns: 150px 150px 150px 150px 150px 150px 150px  ;
+            justify-content: space-between;
+            li{
+                list-style-type:none;
+                background-color:white;
+                img{
+                    display:block;
+                    width: 150px;
+                    height:150px;
+                }
+                &:hover{
+                    cursor:pointer;
+                }
+                
+            }
+        }
+    }
+}

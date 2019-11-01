@@ -1,0 +1,29 @@
+.drawer-tab {
+  float: left;
+  list-style-type: none;
+  font-family: inherit;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 10px 50px;
+}
+.drawer-tab:hover {
+  border-bottom: #ffa31a 3px solid;
+  cursor: pointer;
+}
+.drawer-tab::after {
+  content: "";
+  background-image: url("../imgs/down-arrow-image.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  margin-left: 2px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.drawer-tab-active {
+  border-bottom: #ffa31a 3px solid;
+}
+.drawer-tab-active:hover {
+  cursor: pointer;
+}

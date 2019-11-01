@@ -1,0 +1,42 @@
+.status-bar {
+  width: 100%;
+  padding: 0 10%;
+  margin-top: 10px;
+}
+.status-bar .status-content {
+  text-transform: capitalize;
+  font-weight: 900;
+  line-height: 36px;
+  margin: 10px 0;
+  display: inline-block;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+.status-bar .item-background-option {
+  float: right;
+  margin-top: 8px;
+}
+.status-bar .item-background-option .background-option {
+  cursor: pointer;
+  border-radius: 5px;
+  border: grey solid 2px;
+  float: left;
+  margin: 0 6px;
+  width: 36px;
+  height: 36px;
+}
+.status-bar .item-background-option .background-option:hover {
+  border: #ffa31a solid 2px;
+}
+.status-bar .item-background-option #bg-option-transparent {
+  background-image: url('../imgs/transparent_back.png');
+  background-size: 160px;
+  background-repeat: no-repeat;
+}
+.status-bar .item-background-option #bg-option-white {
+  background-color: white;
+}
+.status-bar .item-background-option #bg-option-black {
+  background-color: black;
+}

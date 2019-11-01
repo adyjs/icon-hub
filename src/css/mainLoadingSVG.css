@@ -1,0 +1,9 @@
+.main-loading-svg {
+  width: 100%;
+  height: 500px;
+  padding: 120px;
+  text-align: center;
+}
+.main-loading-svg img {
+  width: 70px;
+}

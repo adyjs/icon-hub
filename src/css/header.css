@@ -1,0 +1,12 @@
+.header .header-inner {
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 10px 10%;
+  font-family: 'Noto Sans TC', sans-serif;
+  height: 80px;
+  color: white;
+}
+.header .header-inner ul li {
+  font-family: inherit;
+  list-style-type: none;
+  float: left;
+}

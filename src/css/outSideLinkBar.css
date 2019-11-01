@@ -1,0 +1,30 @@
+.out-side-link-bar {
+  width: 100%;
+  padding: 0 10%;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.out-side-link-bar ul {
+  width: 100%;
+}
+.out-side-link-bar ul li {
+  display: inline-block;
+  list-style-type: none;
+  font-family: inherit;
+  font-size: 16px;
+  color: #ccc;
+  letter-spacing: 2px;
+  height: 100%;
+}
+.out-side-link-bar ul li a {
+  display: block;
+  line-height: 40px;
+  padding: 6px 0;
+  font-family: inherit;
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  padding: 0 20px;
+}
+.out-side-link-bar ul .out-side-link-bar-title {
+  color: #888;
+}

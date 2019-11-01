@@ -1,0 +1,45 @@
+.cates-main {
+  width: 100%;
+  padding: 0 10%;
+}
+.cates-main .cates-main-inner {
+  width: 100%;
+}
+.cates-main .cates-main-inner .cates-items-ul {
+  display: grid;
+  grid-row-gap: 30px;
+  padding: 30px 0 100px 0;
+  grid-template-columns: 150px 150px 150px 150px 150px 150px 150px  ;
+  justify-content: space-between;
+}
+.cates-main .cates-main-inner .cates-items-ul .cates-items-li {
+  list-style-type: none;
+  padding: 10px;
+}
+.cates-main .cates-main-inner .cates-items-ul .cates-items-li img {
+  display: block;
+  width: 130px;
+  height: 130px;
+}
+.cates-main .cates-main-inner .cates-items-ul .cates-items-li:hover {
+  cursor: pointer;
+}
+.cates-main .cates-main-inner .cates-items-ul .cates-items-bg-white {
+  background-color: white;
+}
+.cates-main .cates-main-inner .cates-items-ul .cates-items-bg-black {
+  background-color: black;
+}
+.cates-main .cates-main-inner .cates-items-ul .cates-items-bg-transparent {
+  background-image: url('../imgs/transparent_back.png');
+  background-repeat: no-repeat;
+  background-size: 130%;
+}
+.cates-main .cates-main-inner .empty-icon-sets {
+  border-left: #ffa31a solid 5px;
+  width: 100%;
+  color: white;
+  font-size: 24px;
+  margin: 40px 0 300px 0px;
+  padding: 0 0 0 14px;
+}
