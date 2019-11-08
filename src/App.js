@@ -14,6 +14,7 @@ import CatesMain from './components/main/catesMain.jsx';
 import IndexPage from './components/indexPage/indexPage.jsx';
 import TermAndPolicy from './components/termAndPolicy/termAndPolicy.jsx';
 import Footer from './components/footer/footer.jsx';
+import NotFound_404 from './components/notFound_404.jsx';
 
 // react-router
 import {Switch , Route} from 'react-router-dom';
@@ -58,6 +59,9 @@ class App extends React.Component{
                 exact
                 path="/"
                 component={IndexPage}
+              />
+              <Route 
+                component={NotFound_404}
               />
             </Switch>
             

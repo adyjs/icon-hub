@@ -1,0 +1,42 @@
+@general_font_tw:'Noto Sans TC', sans-serif;
+@theme_color:#ffa31a;
+@back_theme_color:rgba(255,255,255,0.25);
+
+.not-found-404{
+    width:100%;
+    padding:0 10%;
+    .not-found-404-main-title{
+        font-family:@general_font_tw;
+        font-size:180px;
+        line-height:180px;
+        font-weight:900;
+        color:@theme_color;
+        text-align:center;
+    }
+    .not-found-404-main-content{
+        font-family:@general_font_tw;
+        font-size:30px;
+        font-weight:900;
+        color:@theme_color;
+        text-align:center;
+        letter-spacing: 1px;
+    }
+
+    .not-fount-back-to-index-link{
+        text-decoration: none;
+        .not-fount-back-to-index-link-content{
+            font-family:@general_font_tw;
+            font-size:20px;
+            font-weight:404;
+            padding:30px;
+            text-align: center;
+            display:block;
+            color:white;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+}

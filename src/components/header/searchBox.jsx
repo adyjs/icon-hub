@@ -19,12 +19,12 @@ class SearchBox extends Component {
 
 
     /* Just provide functionality that let user could click 'Enter' to start search */
-    clickEnter = (e) => {
-        e.preventDefault();
-        if(e.keyCode === 13){
-            this.clickToSearch();
-        }
-    }
+    // clickEnter = (e) => {
+    //     e.preventDefault();
+    //     if(e.keyCode === 13){
+    //         this.clickToSearch();
+    //     }
+    // }
     
     clickToSearch = () => {
         const {inputValue} = this.state;
@@ -35,15 +35,16 @@ class SearchBox extends Component {
     };
 
     inputSearchBox = (e) => {
-        if(e.key !== 'Enter'){
-            this.setState({
-                inputValue: e.target.value
-            })
-        }
-        if(e.key === 'Enter'){
-            this.clickToSearch();
-        }
-        // return;
+        console.log(e.target);
+        // if(e.key === 'Enter'){
+        //     e.preventDefault();
+        //     this.clickToSearch();
+        //     return;
+        // }
+        this.setState({
+            inputValue: e.target.value
+        })
+        return;
     }
 
     render() {

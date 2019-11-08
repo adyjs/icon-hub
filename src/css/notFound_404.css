@@ -1,0 +1,35 @@
+.not-found-404 {
+  width: 100%;
+  padding: 0 10%;
+}
+.not-found-404 .not-found-404-main-title {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 180px;
+  line-height: 180px;
+  font-weight: 900;
+  color: #ffa31a;
+  text-align: center;
+}
+.not-found-404 .not-found-404-main-content {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: #ffa31a;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.not-found-404 .not-fount-back-to-index-link {
+  text-decoration: none;
+}
+.not-found-404 .not-fount-back-to-index-link .not-fount-back-to-index-link-content {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 20px;
+  font-weight: 404;
+  padding: 30px;
+  text-align: center;
+  display: block;
+  color: white;
+}
+.not-found-404 .not-fount-back-to-index-link .not-fount-back-to-index-link-content:hover {
+  text-decoration: underline;
+}

@@ -1,28 +1,15 @@
 import {takeLatest , put , call} from 'redux-saga/effects';
-
-// APIs
-import iconFinderApi from '../../config.js';
+import axios from 'axios';
 
 // drawer actions
 import * as actionTypes from '../../store/actions/';
-import axios from 'axios';
 
-// iconSets resource url
-const iconSets = iconFinderApi.iconSets;
-const getIconSetsUrl = `${iconFinderApi.baseUrl}${iconSets.endPoint}`;
-const postPath = `${iconSets.postPath}`;
-const queryString = `client_id=${iconFinderApi.client_id}&\
-client_secret=${iconFinderApi.client_secret}&\
-count=${iconSets.count}&\
-premium=${iconSets.premium}&\
-vector=${iconSets.vector}&\
-license=${iconSets.license}`
-
+// front-end config
+import iconFinderApi from '../../config.js';
 
 
 export default function *watchFetchCatesIconSetsAction(){
     yield takeLatest(actionTypes.FETCH_CATES_ICON_SETS_START , pending);
-    
 }
 
 function *pending(payload){
@@ -32,8 +19,10 @@ function *pending(payload){
 
 function startAxiosGet(payload){
     const {catesIdentifier} = payload;
-    const url = `${getIconSetsUrl}/${catesIdentifier}${postPath}?${queryString}`;
-    return axios.get(url);
+    const url = iconFinderApi.catesResource;
+    return axios.post( url , {
+        "identifier" : catesIdentifier
+    })
 };
 
 function *fetchCatesIconSets(payload){

@@ -9,14 +9,6 @@ import iconFinderApi from '../../config.js';
 // axios
 import axios from 'axios';
 
-const search = iconFinderApi.search;
-const searchUrlApi = `${iconFinderApi.baseUrl}${search.endPoint}?\
-client_id=${iconFinderApi.client_id}&\
-client_secret=${iconFinderApi.client_secret}&\
-count=${search.count}&\
-premium=${search.premium}&\
-license=${search.license}`
-
 
 export default function *watchSearchAction(){
     yield takeLatest( actionTypes.FETCH_SEARCH_START , pending);
@@ -28,8 +20,10 @@ function *pending(payload){
 };
 
 function startAxiosGet(payload){
-    const url = `${searchUrlApi}&query=${payload.searchStr}`;
-    return axios.get(url);
+    const url = iconFinderApi.searchResource;
+    return axios.post(url , {
+        "identifier" : payload.searchStr
+    });
 };
 
 function *fetchSearchData(payload){

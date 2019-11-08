@@ -113,7 +113,7 @@ class SearchMain extends Component {
         }
         else{
             if(Array.isArray(searchIcons) && searchIcons.length > 0){
-                console.log(searchIcons);
+                // console.log(searchIcons);
                 return (
                     <ul className="search-items-ul">{this.secondStageRenderHandler(searchIcons)}</ul>
                 ) 
